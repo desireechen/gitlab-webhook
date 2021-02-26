@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: version-service
+status:
+   ingress: []
+spec:
+  host: version-service.okdapp.tekong.singapore.net
+  to:
+    kind: Service
+    name: version-service-updater
+    weight: 100
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

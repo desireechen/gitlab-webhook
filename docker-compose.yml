@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  version-service-app:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    container_name: version-service
+    # env_file: .env
+    networks: 
+      - default
+    # command: bash /app/run.sh 
+    privileged: false
+    ports:
+      - 8000:8000
