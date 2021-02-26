@@ -1,14 +1,20 @@
-Version Service is an app deployed in OpenShift which is an enterprise Kubernetes application platform. 
+Version Service is an app deployed in OpenShift which is an enterprise Kubernetes application platform. The service, built using FastAPI, receives a GitLab webhook, processes the webhook and sends messages to a Request Bin. 
 
-# One-time Setup
+<img width="611" alt="fastapi" src="https://user-images.githubusercontent.com/51873343/109282353-61e84800-7858-11eb-9a98-f29d6fc6521e.PNG">
 
-## Create Helm chart with the name "updater"
+POST messages in Request Bin.
+
+<img width="163" alt="requestbin" src="https://user-images.githubusercontent.com/51873343/109282584-ad025b00-7858-11eb-95df-afeb11a8e5e1.PNG">
+
+## One-time Setup
+
+### Create Helm chart with the name "updater"
 This command creates a chart directory along with the common files and directories used in a Helm chart. 
 ```
 helm create updater
 ```
 
-## Create new project in OpenShift
+### Create new project in OpenShift
 ```
 oc login
 
@@ -18,15 +24,15 @@ oc project repository-update-svc
 oc logout
 ```
 
-# Local Testing
+## Local Testing
 For local testing, the `Dockerfile` and `docker-compose.yml` files are required.
 ```
 docker-compose -f docker-compose.yml up -d --build
 ```
 
-# Moving to Production
+## Moving to Production
 
-## Deploy in OpenShift
+### Deploy in OpenShift
 Need to create a route to make the service accessible outside of OpenShift.
 ```
 oc create -f route.yaml
@@ -43,7 +49,7 @@ Landing page: https://version-service.okd.tekong.singapore.net/docs
 
 Request URL: https://version-service.okd.tekong.singapore.net/message
 
-## To upgrade a release
+### To upgrade a release
 Need to build Docker image, push it to the image registry, delete pod (so that a new pod containing Docker container with new image can start).
 ```
 docker build -t registry.singapore.net/data-engineering/version-service .
@@ -57,7 +63,7 @@ The last command upgrades a release `version-service` to a new version of a char
 
 For convenience when developing service, a Bash script `Tekong.sh` has been created which contains the commands for upgrading a release. 
 
-# Useful OpenShift commands
+## Useful OpenShift commands
 ```
 oc project
 oc status
