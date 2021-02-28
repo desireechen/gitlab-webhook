@@ -1,6 +1,6 @@
 Version Service is an app deployed in OpenShift which is an enterprise Kubernetes application platform. The service, built using FastAPI, receives a GitLab webhook, processes the webhook and sends messages to a Request Bin. 
 
-<img width="611" alt="fastapi" src="https://user-images.githubusercontent.com/51873343/109282353-61e84800-7858-11eb-9a98-f29d6fc6521e.PNG">
+<img width="900" alt="fastapi" src="https://user-images.githubusercontent.com/51873343/109282353-61e84800-7858-11eb-9a98-f29d6fc6521e.PNG">
 
 POST messages in Request Bin.
 
