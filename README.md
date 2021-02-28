@@ -4,7 +4,7 @@ Version Service is an app deployed in OpenShift which is an enterprise Kubernete
 
 POST messages in Request Bin.
 
-<img width="163" alt="requestbin" src="https://user-images.githubusercontent.com/51873343/109282584-ad025b00-7858-11eb-95df-afeb11a8e5e1.PNG">
+<img width="300" alt="requestbin" src="https://user-images.githubusercontent.com/51873343/109282584-ad025b00-7858-11eb-95df-afeb11a8e5e1.PNG">
 
 ## One-time Setup
 
