@@ -65,7 +65,7 @@ For convenience when developing service, a Bash script `Tekong.sh` has been crea
 
 Below is a screenshot of the Kubernetes extension in VS code. Deployment 20 supersedes previous versions of the deployment. 
 
-<img width="246" alt="kubernetes_extension" src="https://user-images.githubusercontent.com/51873343/109409246-09d25280-79cc-11eb-98d4-f914bbcecba0.PNG">
+<img width="530" alt="kubernetes_extension" src="https://user-images.githubusercontent.com/51873343/109409318-caf0cc80-79cc-11eb-8bb1-1109a17a627c.PNG">
 
 ## Useful OpenShift commands
 ```
