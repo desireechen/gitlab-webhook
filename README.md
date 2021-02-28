@@ -63,6 +63,10 @@ The last command upgrades a release `version-service` to a new version of a char
 
 For convenience when developing service, a Bash script `Tekong.sh` has been created which contains the commands for upgrading a release. 
 
+Below is a screenshot of the Kubernetes extension in VS code. Deployment 20 supersedes previous versions of the deployment. 
+
+<img width="246" alt="kubernetes_extension" src="https://user-images.githubusercontent.com/51873343/109409246-09d25280-79cc-11eb-98d4-f914bbcecba0.PNG">
+
 ## Useful OpenShift commands
 ```
 oc project
